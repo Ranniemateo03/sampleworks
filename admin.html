@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<!-- saved from url=(0110)#route=catalog/product/add&token=xjIBMdMOhp2hJO75ZyuJHZzMhwGx098V -->
+<html dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Products</title>
+<!--<base href="http://tamina.webstarterz.com/admin/">--><base href=".">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="./admin_files/jquery-2.1.1.min.js.download"></script>
+<script type="text/javascript" src="./admin_files/bootstrap.min.js.download"></script>
+<link href="./admin_files/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="./admin_files/font-awesome.min.css" type="text/css" rel="stylesheet">
+<link href="./admin_files/summernote.css" rel="stylesheet">
+<script type="text/javascript" src="./admin_files/summernote.js.download"></script>
+<script src="./admin_files/moment.js.download" type="text/javascript"></script>
+<script src="./admin_files/bootstrap-datetimepicker.min.js.download" type="text/javascript"></script>
+<link href="./admin_files/bootstrap-datetimepicker.min.css" type="text/css" rel="stylesheet" media="screen">
+<link type="text/css" href="./admin_files/stylesheet.css" rel="stylesheet" media="screen">
+
+
+
+
+
+<script src="./admin_files/common.js.download" type="text/javascript"></script>
+</head>
+<body>
+<div id="container">
+<header id="header" class="navbar navbar-static-top">
+  <div class="navbar-header">
+        <a type="button" id="button-menu" class="pull-left"><i class="fa fa-dedent fa-lg"></i></a>
+        <a href="#" class="navbar-brand"></a></div>
+    <ul class="nav pull-right">
+    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><span class="label label-danger pull-left">8</span> <i class="fa fa-bell fa-lg"></i></a>
+      <ul class="dropdown-menu dropdown-menu-right alerts-dropdown">
+        <li class="dropdown-header">Orders</li>
+        <li><a href="#" style="display: block; overflow: auto;"><span class="label label-warning pull-right">0</span>Processing</a></li>
+        <li><a href="#"><span class="label label-success pull-right">18</span>Completed</a></li>
+        <li><a href="#"><span class="label label-danger pull-right">4</span>Returns</a></li>
+        <li class="divider"></li>
+        <li class="dropdown-header">Customers</li>
+        <li><a href="#"><span class="label label-success pull-right">1</span>Customers Online</a></li>
+        <li><a href="#"><span class="label label-danger pull-right">0</span>Pending approval</a></li>
+        <li class="divider"></li>
+        <li class="dropdown-header">Products</li>
+        <li><a href="#"><span class="label label-danger pull-right">0</span>Out of stock</a></li>
+        <li><a href="#"><span class="label label-danger pull-right">4</span>Reviews</a></li>
+        <li class="divider"></li>
+
+      </ul>
+    </li>
+    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-home fa-lg"></i></a>
+      <ul class="dropdown-menu dropdown-menu-right">
+        <li class="dropdown-header">Stores</li>
+                <li><a href="#" target="_blank">Tamina</a></li>
+              </ul>
+    </li>
+
+    <li><a href="#"><span class="hidden-xs hidden-sm hidden-md">Logout</span> <i class="fa fa-sign-out fa-lg"></i></a></li>
+  </ul>
+  </header>
+<nav id="column-left" class="active"><div id="profile">
+  <div>
+        <i class=""></i>
+      </div>
+  <div>
+    <small>Administrator</small>
+  </div>
+</div>
+<ul id="menu">
+  <li id="dashboard"><a href="#"><i class="fa fa-dashboard fa-fw"></i> <span>Dashboard</span></a></li>
+  <li id="catalog" class="active open"><a class="parent"><i class="fa fa-tags fa-fw"></i> <span>Manage Products</span></a>
+    <ul class="collapse in">
+      <li><a href="#">Categories</a></li>
+      <li class="active open"><a href="#">Product Inventory</a></li>
+
+      <li><a href="#">Filters</a></li>
+
+
+      <li><a href="#">Options</a></li>
+
+
+
+      <li><a href="#">Information</a></li>
+    </ul>
+  </li>
+
+
+  <li id="design"><a class="parent"><i class="fa fa-television fa-fw"></i> <span>Design</span></a>
+    <ul class="collapse">
+      <li><a href="#">Layouts</a></li>
+      <li><a href="#">Banners</a></li>
+    </ul>
+  </li>
+
+
+  <li id="sale"><a class="parent"><i class="fa fa-shopping-cart fa-fw"></i> <span>Transaction Summary</span></a>
+    <ul class="collapse">
+      <li><a href="#">Orders</a></li>
+       <li><a href="#">Returns</a></li>
+    </ul>
+  </li>
+
+
+  <li id="customer"><a class="parent"><i class="fa fa-user fa-fw"></i> <span>Customers</span></a>
+    <ul class="collapse">
+      <li><a href="#">Customers</a></li>
+    </ul>
+  </li>
+
+  <li><a class="parent"><i class="fa fa-share-alt fa-fw"></i> <span>Mail/Coupon</span></a>
+    <ul class="collapse">
+      <li><a href="#">Coupons</a></li>
+      <li><a href="#">Mail</a></li>
+    </ul>
+  </li>
+
+
+  <li id="reports"><a class="parent"><i class="fa fa-bar-chart-o fa-fw"></i> <span>Reports</span></a>
+    <ul class="collapse">
+      <li><a class="parent">Sales</a>
+        <ul class="collapse">
+          <li><a href="#">Sales Report</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Coupons</a></li>
+        </ul>
+      </li>
+      <li><a class="parent">Products</a>
+        <ul class="collapse">
+            <li><a href="#">Product Review Rating Report</a></li>
+          <li><a href="#">Viewed</a></li>
+          <li><a href="#">Saleable Products</a></li>
+           <li><a href="#">Non Saleable products</a></li>
+           <li><a href="#">Product Expiration Report</a></li>
+
+        </ul>
+      </li>
+        <ul class="collapse">
+
+          <li><a href="#">Search Term Report</a></li>
+					<li><a class="parent">Customers</a>
+          <li><a href="#">Customers Online</a></li>
+          <li><a href="#">Customer Activity</a></li>
+          <li><a href="#">Orders</a></li>
+
+        </ul>
+      </li>
+
+        </ul>
+      </li>
+
+      <li id="Forecasting"><a class="parent"><i class="fa fa-area-chart"></i> <span>Forecasting</span></a>
+        <ul class="collapse">
+     <li><a href="#">Sales Forecasting</a></li>
+        <li><a href="#">Stock Forecasting</a></li>
+
+      <li><a href="#">Sales forecasting per product</a></li>
+        </ul>
+      </li>
+
+
+
+          <li id="Audit Trail"><a class="parent"><i class="fa fa-history"></i> <span>Admin Audit Trail</span></a>
+        <ul class="collapse">
+     <li><a href="#">Audit Trail</a></li>
+
+
+</ul>
+  </li>
+
+
+</ul>
+
+<div id="stats">
+  <ul>
+    <li>
+      <div>Orders Completed <span class="pull-right">62%</span></div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100" style="width: 62%"> <span class="sr-only">62%</span> </div>
+      </div>
+    </li>
+    <li>
+      <div>Orders Processing <span class="pull-right">0%</span></div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"> <span class="sr-only">0%</span> </div>
+      </div>
+    </li>
+    <li>
+      <div>Other Statuses <span class="pull-right">38%</span></div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%"> <span class="sr-only">38%</span> </div>
+      </div>
+    </li>
+  </ul>
+</div>
+</nav>
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+      <div class="pull-right">
+        <button type="submit" form="form-product" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Save"><i class="fa fa-save"></i></button>
+        <a href="#" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="Cancel"><i class="fa fa-reply"></i></a></div>
+      <h1>Products</h1>
+      <ul class="breadcrumb">
+                <li><a href="">Home</a></li>
+								<li><a href="">Products</a></li>
+              </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+        <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-pencil"></i> Add Product</h3>
+      </div>
+      <div class="panel-body">
+        <form action="#route=catalog/product/add&amp;token=xjIBMdMOhp2hJO75ZyuJHZzMhwGx098V" method="post" enctype="multipart/form-data" id="form-product" class="form-horizontal">
+          <ul class="nav nav-tabs">
+            <li class=""><a href="#" data-toggle="tab" aria-expanded="false">General</a></li>
+            <li><a href="#" data-toggle="tab">Data</a></li>
+            <li><a href="#" data-toggle="tab">Links</a></li>
+            <li class=""><a href="#" data-toggle="tab" aria-expanded="false">Option</a></li>
+
+            <li class="active"><a href="#" data-toggle="tab" aria-expanded="true">Image</a></li>
+
+
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane" id="tab-general">
+              <ul class="nav nav-tabs" id="language">
+                                <li class="active"><a href="#" data-toggle="tab" aria-expanded="false">  </a></li>
+                              </ul>
+              <div class="tab-content">
+                                <div class="tab-pane active" id="language1">
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-name1">Product Name</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="product_description[1][name]" value="" placeholder="Product Name" id="input-name1" class="form-control">
+                                          </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-description1">Description</label>
+                    <div class="col-sm-10">
+                      <textarea name="product_description[1][description]" placeholder="Description" id="input-description1" class="form-control summernote" style="display: none;"></textarea><div class="note-editor note-frame panel panel-default"><div class="note-dropzone">  <div class="note-dropzone-message"></div></div><div class="note-toolbar panel-heading"><div class="note-btn-group btn-group note-style"><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" title="" data-original-title="Style"><i class="fa fa-magic"></i> <span class="caret"></span></button><div class="dropdown-menu dropdown-style"><li><a href="http://tamina.webstarterz.com/admin/#" data-value="p"><p>p</p></a></li><li><a href="http://tamina.webstarterz.com/admin/#" data-value="blockquote"><blockquote>blockquote</blockquote></a></li><li><a href="http://tamina.webstarterz.com/admin/#" data-value="pre"><pre>pre</pre></a></li><li><a href="http://tamina.webstarterz.com/admin/#" data-value="h1"><h1>h1</h1></a></li><li><a href="http://tamina.webstarterz.com/admin/#" data-value="h2"><h2>h2</h2></a></li><li><a href="http://tamina.webstarterz.com/admin/#" data-value="h3"><h3>h3</h3></a></li><li><a href="http://tamina.webstarterz.com/admin/#" data-value="h4"><h4>h4</h4></a></li><li><a href="http://tamina.webstarterz.com/admin/#" data-value="h5"><h5>h5</h5></a></li><li><a href="http://tamina.webstarterz.com/admin/#" data-value="h6"><h6>h6</h6></a></li></div></div></div><div class="note-btn-group btn-group note-font"><button type="button" class="note-btn btn btn-default btn-sm note-btn-bold" title="" data-original-title="Bold (CTRL+B)"><i class="fa fa-bold"></i></button><button type="button" class="note-btn btn btn-default btn-sm note-btn-underline" title="" data-original-title="Underline (CTRL+U)"><i class="fa fa-underline"></i></button><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Remove Font Style (CTRL+\)"><i class="fa fa-eraser"></i></button></div><div class="note-btn-group btn-group note-fontname"><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" title="" data-original-title="Font Family"><span class="note-current-fontname">Open Sans</span> <span class="caret"></span></button><div class="dropdown-menu note-check dropdown-fontname"><li><a href="http://tamina.webstarterz.com/admin/#" data-value="Arial" class=""><i class="fa fa-check"></i> <span style="font-family:Arial">Arial</span></a></li><li><a href="http://tamina.webstarterz.com/admin/#" data-value="Arial Black" class=""><i class="fa fa-check"></i> <span style="font-family:Arial Black">Arial Black</span></a></li><li><a href="http://tamina.webstarterz.com/admin/#" data-value="Comic Sans MS" class=""><i class="fa fa-check"></i> <span style="font-family:Comic Sans MS">Comic Sans MS</span></a></li><li><a href="http://tamina.webstarterz.com/admin/#" data-value="Courier New" class=""><i class="fa fa-check"></i> <span style="font-family:Courier New">Courier New</span></a></li><li><a href="http://tamina.webstarterz.com/admin/#" data-value="Helvetica" class=""><i class="fa fa-check"></i> <span style="font-family:Helvetica">Helvetica</span></a></li><li><a href="http://tamina.webstarterz.com/admin/#" data-value="Impact" class=""><i class="fa fa-check"></i> <span style="font-family:Impact">Impact</span></a></li><li><a href="http://tamina.webstarterz.com/admin/#" data-value="Tahoma" class=""><i class="fa fa-check"></i> <span style="font-family:Tahoma">Tahoma</span></a></li><li><a href="http://tamina.webstarterz.com/admin/#" data-value="Times New Roman" class=""><i class="fa fa-check"></i> <span style="font-family:Times New Roman">Times New Roman</span></a></li><li><a href="http://tamina.webstarterz.com/admin/#" data-value="Verdana" class=""><i class="fa fa-check"></i> <span style="font-family:Verdana">Verdana</span></a></li></div></div></div><div class="note-btn-group btn-group note-color"><div class="note-btn-group btn-group note-color"><button type="button" class="note-btn btn btn-default btn-sm note-current-color-button" title="" data-original-title="Recent Color"><i class="fa fa-font note-recent-color" style="background-color: yellow;"></i></button><button type="button" class="note-btn btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" title="" data-original-title="More Color"><span class="caret"></span></button><div class="dropdown-menu"><li><div class="btn-group">  <div class="note-palette-title">Background Color</div>  <div>    <button type="button" class="note-color-reset btn btn-default" data-event="backColor" data-value="inherit">Transparent    </button>  </div>  <div class="note-holder" data-event="backColor"><div class="note-color-palette"><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#000000" data-event="backColor" data-value="#000000" title="" data-toggle="button" tabindex="-1" data-original-title="#000000"></button><button type="button" class="note-color-btn" style="background-color:#424242" data-event="backColor" data-value="#424242" title="" data-toggle="button" tabindex="-1" data-original-title="#424242"></button><button type="button" class="note-color-btn" style="background-color:#636363" data-event="backColor" data-value="#636363" title="" data-toggle="button" tabindex="-1" data-original-title="#636363"></button><button type="button" class="note-color-btn" style="background-color:#9C9C94" data-event="backColor" data-value="#9C9C94" title="" data-toggle="button" tabindex="-1" data-original-title="#9C9C94"></button><button type="button" class="note-color-btn" style="background-color:#CEC6CE" data-event="backColor" data-value="#CEC6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#CEC6CE"></button><button type="button" class="note-color-btn" style="background-color:#EFEFEF" data-event="backColor" data-value="#EFEFEF" title="" data-toggle="button" tabindex="-1" data-original-title="#EFEFEF"></button><button type="button" class="note-color-btn" style="background-color:#F7F7F7" data-event="backColor" data-value="#F7F7F7" title="" data-toggle="button" tabindex="-1" data-original-title="#F7F7F7"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#FF0000" data-event="backColor" data-value="#FF0000" title="" data-toggle="button" tabindex="-1" data-original-title="#FF0000"></button><button type="button" class="note-color-btn" style="background-color:#FF9C00" data-event="backColor" data-value="#FF9C00" title="" data-toggle="button" tabindex="-1" data-original-title="#FF9C00"></button><button type="button" class="note-color-btn" style="background-color:#FFFF00" data-event="backColor" data-value="#FFFF00" title="" data-toggle="button" tabindex="-1" data-original-title="#FFFF00"></button><button type="button" class="note-color-btn" style="background-color:#00FF00" data-event="backColor" data-value="#00FF00" title="" data-toggle="button" tabindex="-1" data-original-title="#00FF00"></button><button type="button" class="note-color-btn" style="background-color:#00FFFF" data-event="backColor" data-value="#00FFFF" title="" data-toggle="button" tabindex="-1" data-original-title="#00FFFF"></button><button type="button" class="note-color-btn" style="background-color:#0000FF" data-event="backColor" data-value="#0000FF" title="" data-toggle="button" tabindex="-1" data-original-title="#0000FF"></button><button type="button" class="note-color-btn" style="background-color:#9C00FF" data-event="backColor" data-value="#9C00FF" title="" data-toggle="button" tabindex="-1" data-original-title="#9C00FF"></button><button type="button" class="note-color-btn" style="background-color:#FF00FF" data-event="backColor" data-value="#FF00FF" title="" data-toggle="button" tabindex="-1" data-original-title="#FF00FF"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#F7C6CE" data-event="backColor" data-value="#F7C6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#F7C6CE"></button><button type="button" class="note-color-btn" style="background-color:#FFE7CE" data-event="backColor" data-value="#FFE7CE" title="" data-toggle="button" tabindex="-1" data-original-title="#FFE7CE"></button><button type="button" class="note-color-btn" style="background-color:#FFEFC6" data-event="backColor" data-value="#FFEFC6" title="" data-toggle="button" tabindex="-1" data-original-title="#FFEFC6"></button><button type="button" class="note-color-btn" style="background-color:#D6EFD6" data-event="backColor" data-value="#D6EFD6" title="" data-toggle="button" tabindex="-1" data-original-title="#D6EFD6"></button><button type="button" class="note-color-btn" style="background-color:#CEDEE7" data-event="backColor" data-value="#CEDEE7" title="" data-toggle="button" tabindex="-1" data-original-title="#CEDEE7"></button><button type="button" class="note-color-btn" style="background-color:#CEE7F7" data-event="backColor" data-value="#CEE7F7" title="" data-toggle="button" tabindex="-1" data-original-title="#CEE7F7"></button><button type="button" class="note-color-btn" style="background-color:#D6D6E7" data-event="backColor" data-value="#D6D6E7" title="" data-toggle="button" tabindex="-1" data-original-title="#D6D6E7"></button><button type="button" class="note-color-btn" style="background-color:#E7D6DE" data-event="backColor" data-value="#E7D6DE" title="" data-toggle="button" tabindex="-1" data-original-title="#E7D6DE"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E79C9C" data-event="backColor" data-value="#E79C9C" title="" data-toggle="button" tabindex="-1" data-original-title="#E79C9C"></button><button type="button" class="note-color-btn" style="background-color:#FFC69C" data-event="backColor" data-value="#FFC69C" title="" data-toggle="button" tabindex="-1" data-original-title="#FFC69C"></button><button type="button" class="note-color-btn" style="background-color:#FFE79C" data-event="backColor" data-value="#FFE79C" title="" data-toggle="button" tabindex="-1" data-original-title="#FFE79C"></button><button type="button" class="note-color-btn" style="background-color:#B5D6A5" data-event="backColor" data-value="#B5D6A5" title="" data-toggle="button" tabindex="-1" data-original-title="#B5D6A5"></button><button type="button" class="note-color-btn" style="background-color:#A5C6CE" data-event="backColor" data-value="#A5C6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#A5C6CE"></button><button type="button" class="note-color-btn" style="background-color:#9CC6EF" data-event="backColor" data-value="#9CC6EF" title="" data-toggle="button" tabindex="-1" data-original-title="#9CC6EF"></button><button type="button" class="note-color-btn" style="background-color:#B5A5D6" data-event="backColor" data-value="#B5A5D6" title="" data-toggle="button" tabindex="-1" data-original-title="#B5A5D6"></button><button type="button" class="note-color-btn" style="background-color:#D6A5BD" data-event="backColor" data-value="#D6A5BD" title="" data-toggle="button" tabindex="-1" data-original-title="#D6A5BD"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E76363" data-event="backColor" data-value="#E76363" title="" data-toggle="button" tabindex="-1" data-original-title="#E76363"></button><button type="button" class="note-color-btn" style="background-color:#F7AD6B" data-event="backColor" data-value="#F7AD6B" title="" data-toggle="button" tabindex="-1" data-original-title="#F7AD6B"></button><button type="button" class="note-color-btn" style="background-color:#FFD663" data-event="backColor" data-value="#FFD663" title="" data-toggle="button" tabindex="-1" data-original-title="#FFD663"></button><button type="button" class="note-color-btn" style="background-color:#94BD7B" data-event="backColor" data-value="#94BD7B" title="" data-toggle="button" tabindex="-1" data-original-title="#94BD7B"></button><button type="button" class="note-color-btn" style="background-color:#73A5AD" data-event="backColor" data-value="#73A5AD" title="" data-toggle="button" tabindex="-1" data-original-title="#73A5AD"></button><button type="button" class="note-color-btn" style="background-color:#6BADDE" data-event="backColor" data-value="#6BADDE" title="" data-toggle="button" tabindex="-1" data-original-title="#6BADDE"></button><button type="button" class="note-color-btn" style="background-color:#8C7BC6" data-event="backColor" data-value="#8C7BC6" title="" data-toggle="button" tabindex="-1" data-original-title="#8C7BC6"></button><button type="button" class="note-color-btn" style="background-color:#C67BA5" data-event="backColor" data-value="#C67BA5" title="" data-toggle="button" tabindex="-1" data-original-title="#C67BA5"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#CE0000" data-event="backColor" data-value="#CE0000" title="" data-toggle="button" tabindex="-1" data-original-title="#CE0000"></button><button type="button" class="note-color-btn" style="background-color:#E79439" data-event="backColor" data-value="#E79439" title="" data-toggle="button" tabindex="-1" data-original-title="#E79439"></button><button type="button" class="note-color-btn" style="background-color:#EFC631" data-event="backColor" data-value="#EFC631" title="" data-toggle="button" tabindex="-1" data-original-title="#EFC631"></button><button type="button" class="note-color-btn" style="background-color:#6BA54A" data-event="backColor" data-value="#6BA54A" title="" data-toggle="button" tabindex="-1" data-original-title="#6BA54A"></button><button type="button" class="note-color-btn" style="background-color:#4A7B8C" data-event="backColor" data-value="#4A7B8C" title="" data-toggle="button" tabindex="-1" data-original-title="#4A7B8C"></button><button type="button" class="note-color-btn" style="background-color:#3984C6" data-event="backColor" data-value="#3984C6" title="" data-toggle="button" tabindex="-1" data-original-title="#3984C6"></button><button type="button" class="note-color-btn" style="background-color:#634AA5" data-event="backColor" data-value="#634AA5" title="" data-toggle="button" tabindex="-1" data-original-title="#634AA5"></button><button type="button" class="note-color-btn" style="background-color:#A54A7B" data-event="backColor" data-value="#A54A7B" title="" data-toggle="button" tabindex="-1" data-original-title="#A54A7B"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#9C0000" data-event="backColor" data-value="#9C0000" title="" data-toggle="button" tabindex="-1" data-original-title="#9C0000"></button><button type="button" class="note-color-btn" style="background-color:#B56308" data-event="backColor" data-value="#B56308" title="" data-toggle="button" tabindex="-1" data-original-title="#B56308"></button><button type="button" class="note-color-btn" style="background-color:#BD9400" data-event="backColor" data-value="#BD9400" title="" data-toggle="button" tabindex="-1" data-original-title="#BD9400"></button><button type="button" class="note-color-btn" style="background-color:#397B21" data-event="backColor" data-value="#397B21" title="" data-toggle="button" tabindex="-1" data-original-title="#397B21"></button><button type="button" class="note-color-btn" style="background-color:#104A5A" data-event="backColor" data-value="#104A5A" title="" data-toggle="button" tabindex="-1" data-original-title="#104A5A"></button><button type="button" class="note-color-btn" style="background-color:#085294" data-event="backColor" data-value="#085294" title="" data-toggle="button" tabindex="-1" data-original-title="#085294"></button><button type="button" class="note-color-btn" style="background-color:#311873" data-event="backColor" data-value="#311873" title="" data-toggle="button" tabindex="-1" data-original-title="#311873"></button><button type="button" class="note-color-btn" style="background-color:#731842" data-event="backColor" data-value="#731842" title="" data-toggle="button" tabindex="-1" data-original-title="#731842"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#630000" data-event="backColor" data-value="#630000" title="" data-toggle="button" tabindex="-1" data-original-title="#630000"></button><button type="button" class="note-color-btn" style="background-color:#7B3900" data-event="backColor" data-value="#7B3900" title="" data-toggle="button" tabindex="-1" data-original-title="#7B3900"></button><button type="button" class="note-color-btn" style="background-color:#846300" data-event="backColor" data-value="#846300" title="" data-toggle="button" tabindex="-1" data-original-title="#846300"></button><button type="button" class="note-color-btn" style="background-color:#295218" data-event="backColor" data-value="#295218" title="" data-toggle="button" tabindex="-1" data-original-title="#295218"></button><button type="button" class="note-color-btn" style="background-color:#083139" data-event="backColor" data-value="#083139" title="" data-toggle="button" tabindex="-1" data-original-title="#083139"></button><button type="button" class="note-color-btn" style="background-color:#003163" data-event="backColor" data-value="#003163" title="" data-toggle="button" tabindex="-1" data-original-title="#003163"></button><button type="button" class="note-color-btn" style="background-color:#21104A" data-event="backColor" data-value="#21104A" title="" data-toggle="button" tabindex="-1" data-original-title="#21104A"></button><button type="button" class="note-color-btn" style="background-color:#4A1031" data-event="backColor" data-value="#4A1031" title="" data-toggle="button" tabindex="-1" data-original-title="#4A1031"></button></div></div></div></div><div class="btn-group">  <div class="note-palette-title">Foreground Color</div>  <div>    <button type="button" class="note-color-reset btn btn-default" data-event="removeFormat" data-value="foreColor">Reset to default    </button>  </div>  <div class="note-holder" data-event="foreColor"><div class="note-color-palette"><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#000000" data-event="foreColor" data-value="#000000" title="" data-toggle="button" tabindex="-1" data-original-title="#000000"></button><button type="button" class="note-color-btn" style="background-color:#424242" data-event="foreColor" data-value="#424242" title="" data-toggle="button" tabindex="-1" data-original-title="#424242"></button><button type="button" class="note-color-btn" style="background-color:#636363" data-event="foreColor" data-value="#636363" title="" data-toggle="button" tabindex="-1" data-original-title="#636363"></button><button type="button" class="note-color-btn" style="background-color:#9C9C94" data-event="foreColor" data-value="#9C9C94" title="" data-toggle="button" tabindex="-1" data-original-title="#9C9C94"></button><button type="button" class="note-color-btn" style="background-color:#CEC6CE" data-event="foreColor" data-value="#CEC6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#CEC6CE"></button><button type="button" class="note-color-btn" style="background-color:#EFEFEF" data-event="foreColor" data-value="#EFEFEF" title="" data-toggle="button" tabindex="-1" data-original-title="#EFEFEF"></button><button type="button" class="note-color-btn" style="background-color:#F7F7F7" data-event="foreColor" data-value="#F7F7F7" title="" data-toggle="button" tabindex="-1" data-original-title="#F7F7F7"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#FF0000" data-event="foreColor" data-value="#FF0000" title="" data-toggle="button" tabindex="-1" data-original-title="#FF0000"></button><button type="button" class="note-color-btn" style="background-color:#FF9C00" data-event="foreColor" data-value="#FF9C00" title="" data-toggle="button" tabindex="-1" data-original-title="#FF9C00"></button><button type="button" class="note-color-btn" style="background-color:#FFFF00" data-event="foreColor" data-value="#FFFF00" title="" data-toggle="button" tabindex="-1" data-original-title="#FFFF00"></button><button type="button" class="note-color-btn" style="background-color:#00FF00" data-event="foreColor" data-value="#00FF00" title="" data-toggle="button" tabindex="-1" data-original-title="#00FF00"></button><button type="button" class="note-color-btn" style="background-color:#00FFFF" data-event="foreColor" data-value="#00FFFF" title="" data-toggle="button" tabindex="-1" data-original-title="#00FFFF"></button><button type="button" class="note-color-btn" style="background-color:#0000FF" data-event="foreColor" data-value="#0000FF" title="" data-toggle="button" tabindex="-1" data-original-title="#0000FF"></button><button type="button" class="note-color-btn" style="background-color:#9C00FF" data-event="foreColor" data-value="#9C00FF" title="" data-toggle="button" tabindex="-1" data-original-title="#9C00FF"></button><button type="button" class="note-color-btn" style="background-color:#FF00FF" data-event="foreColor" data-value="#FF00FF" title="" data-toggle="button" tabindex="-1" data-original-title="#FF00FF"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#F7C6CE" data-event="foreColor" data-value="#F7C6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#F7C6CE"></button><button type="button" class="note-color-btn" style="background-color:#FFE7CE" data-event="foreColor" data-value="#FFE7CE" title="" data-toggle="button" tabindex="-1" data-original-title="#FFE7CE"></button><button type="button" class="note-color-btn" style="background-color:#FFEFC6" data-event="foreColor" data-value="#FFEFC6" title="" data-toggle="button" tabindex="-1" data-original-title="#FFEFC6"></button><button type="button" class="note-color-btn" style="background-color:#D6EFD6" data-event="foreColor" data-value="#D6EFD6" title="" data-toggle="button" tabindex="-1" data-original-title="#D6EFD6"></button><button type="button" class="note-color-btn" style="background-color:#CEDEE7" data-event="foreColor" data-value="#CEDEE7" title="" data-toggle="button" tabindex="-1" data-original-title="#CEDEE7"></button><button type="button" class="note-color-btn" style="background-color:#CEE7F7" data-event="foreColor" data-value="#CEE7F7" title="" data-toggle="button" tabindex="-1" data-original-title="#CEE7F7"></button><button type="button" class="note-color-btn" style="background-color:#D6D6E7" data-event="foreColor" data-value="#D6D6E7" title="" data-toggle="button" tabindex="-1" data-original-title="#D6D6E7"></button><button type="button" class="note-color-btn" style="background-color:#E7D6DE" data-event="foreColor" data-value="#E7D6DE" title="" data-toggle="button" tabindex="-1" data-original-title="#E7D6DE"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E79C9C" data-event="foreColor" data-value="#E79C9C" title="" data-toggle="button" tabindex="-1" data-original-title="#E79C9C"></button><button type="button" class="note-color-btn" style="background-color:#FFC69C" data-event="foreColor" data-value="#FFC69C" title="" data-toggle="button" tabindex="-1" data-original-title="#FFC69C"></button><button type="button" class="note-color-btn" style="background-color:#FFE79C" data-event="foreColor" data-value="#FFE79C" title="" data-toggle="button" tabindex="-1" data-original-title="#FFE79C"></button><button type="button" class="note-color-btn" style="background-color:#B5D6A5" data-event="foreColor" data-value="#B5D6A5" title="" data-toggle="button" tabindex="-1" data-original-title="#B5D6A5"></button><button type="button" class="note-color-btn" style="background-color:#A5C6CE" data-event="foreColor" data-value="#A5C6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#A5C6CE"></button><button type="button" class="note-color-btn" style="background-color:#9CC6EF" data-event="foreColor" data-value="#9CC6EF" title="" data-toggle="button" tabindex="-1" data-original-title="#9CC6EF"></button><button type="button" class="note-color-btn" style="background-color:#B5A5D6" data-event="foreColor" data-value="#B5A5D6" title="" data-toggle="button" tabindex="-1" data-original-title="#B5A5D6"></button><button type="button" class="note-color-btn" style="background-color:#D6A5BD" data-event="foreColor" data-value="#D6A5BD" title="" data-toggle="button" tabindex="-1" data-original-title="#D6A5BD"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E76363" data-event="foreColor" data-value="#E76363" title="" data-toggle="button" tabindex="-1" data-original-title="#E76363"></button><button type="button" class="note-color-btn" style="background-color:#F7AD6B" data-event="foreColor" data-value="#F7AD6B" title="" data-toggle="button" tabindex="-1" data-original-title="#F7AD6B"></button><button type="button" class="note-color-btn" style="background-color:#FFD663" data-event="foreColor" data-value="#FFD663" title="" data-toggle="button" tabindex="-1" data-original-title="#FFD663"></button><button type="button" class="note-color-btn" style="background-color:#94BD7B" data-event="foreColor" data-value="#94BD7B" title="" data-toggle="button" tabindex="-1" data-original-title="#94BD7B"></button><button type="button" class="note-color-btn" style="background-color:#73A5AD" data-event="foreColor" data-value="#73A5AD" title="" data-toggle="button" tabindex="-1" data-original-title="#73A5AD"></button><button type="button" class="note-color-btn" style="background-color:#6BADDE" data-event="foreColor" data-value="#6BADDE" title="" data-toggle="button" tabindex="-1" data-original-title="#6BADDE"></button><button type="button" class="note-color-btn" style="background-color:#8C7BC6" data-event="foreColor" data-value="#8C7BC6" title="" data-toggle="button" tabindex="-1" data-original-title="#8C7BC6"></button><button type="button" class="note-color-btn" style="background-color:#C67BA5" data-event="foreColor" data-value="#C67BA5" title="" data-toggle="button" tabindex="-1" data-original-title="#C67BA5"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#CE0000" data-event="foreColor" data-value="#CE0000" title="" data-toggle="button" tabindex="-1" data-original-title="#CE0000"></button><button type="button" class="note-color-btn" style="background-color:#E79439" data-event="foreColor" data-value="#E79439" title="" data-toggle="button" tabindex="-1" data-original-title="#E79439"></button><button type="button" class="note-color-btn" style="background-color:#EFC631" data-event="foreColor" data-value="#EFC631" title="" data-toggle="button" tabindex="-1" data-original-title="#EFC631"></button><button type="button" class="note-color-btn" style="background-color:#6BA54A" data-event="foreColor" data-value="#6BA54A" title="" data-toggle="button" tabindex="-1" data-original-title="#6BA54A"></button><button type="button" class="note-color-btn" style="background-color:#4A7B8C" data-event="foreColor" data-value="#4A7B8C" title="" data-toggle="button" tabindex="-1" data-original-title="#4A7B8C"></button><button type="button" class="note-color-btn" style="background-color:#3984C6" data-event="foreColor" data-value="#3984C6" title="" data-toggle="button" tabindex="-1" data-original-title="#3984C6"></button><button type="button" class="note-color-btn" style="background-color:#634AA5" data-event="foreColor" data-value="#634AA5" title="" data-toggle="button" tabindex="-1" data-original-title="#634AA5"></button><button type="button" class="note-color-btn" style="background-color:#A54A7B" data-event="foreColor" data-value="#A54A7B" title="" data-toggle="button" tabindex="-1" data-original-title="#A54A7B"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#9C0000" data-event="foreColor" data-value="#9C0000" title="" data-toggle="button" tabindex="-1" data-original-title="#9C0000"></button><button type="button" class="note-color-btn" style="background-color:#B56308" data-event="foreColor" data-value="#B56308" title="" data-toggle="button" tabindex="-1" data-original-title="#B56308"></button><button type="button" class="note-color-btn" style="background-color:#BD9400" data-event="foreColor" data-value="#BD9400" title="" data-toggle="button" tabindex="-1" data-original-title="#BD9400"></button><button type="button" class="note-color-btn" style="background-color:#397B21" data-event="foreColor" data-value="#397B21" title="" data-toggle="button" tabindex="-1" data-original-title="#397B21"></button><button type="button" class="note-color-btn" style="background-color:#104A5A" data-event="foreColor" data-value="#104A5A" title="" data-toggle="button" tabindex="-1" data-original-title="#104A5A"></button><button type="button" class="note-color-btn" style="background-color:#085294" data-event="foreColor" data-value="#085294" title="" data-toggle="button" tabindex="-1" data-original-title="#085294"></button><button type="button" class="note-color-btn" style="background-color:#311873" data-event="foreColor" data-value="#311873" title="" data-toggle="button" tabindex="-1" data-original-title="#311873"></button><button type="button" class="note-color-btn" style="background-color:#731842" data-event="foreColor" data-value="#731842" title="" data-toggle="button" tabindex="-1" data-original-title="#731842"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#630000" data-event="foreColor" data-value="#630000" title="" data-toggle="button" tabindex="-1" data-original-title="#630000"></button><button type="button" class="note-color-btn" style="background-color:#7B3900" data-event="foreColor" data-value="#7B3900" title="" data-toggle="button" tabindex="-1" data-original-title="#7B3900"></button><button type="button" class="note-color-btn" style="background-color:#846300" data-event="foreColor" data-value="#846300" title="" data-toggle="button" tabindex="-1" data-original-title="#846300"></button><button type="button" class="note-color-btn" style="background-color:#295218" data-event="foreColor" data-value="#295218" title="" data-toggle="button" tabindex="-1" data-original-title="#295218"></button><button type="button" class="note-color-btn" style="background-color:#083139" data-event="foreColor" data-value="#083139" title="" data-toggle="button" tabindex="-1" data-original-title="#083139"></button><button type="button" class="note-color-btn" style="background-color:#003163" data-event="foreColor" data-value="#003163" title="" data-toggle="button" tabindex="-1" data-original-title="#003163"></button><button type="button" class="note-color-btn" style="background-color:#21104A" data-event="foreColor" data-value="#21104A" title="" data-toggle="button" tabindex="-1" data-original-title="#21104A"></button><button type="button" class="note-color-btn" style="background-color:#4A1031" data-event="foreColor" data-value="#4A1031" title="" data-toggle="button" tabindex="-1" data-original-title="#4A1031"></button></div></div></div></div></li></div></div></div><div class="note-btn-group btn-group note-para"><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Ordered list (CTRL+SHIFT+NUM8)"><i class="fa fa-list-ol"></i></button><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Unordered list (CTRL+SHIFT+NUM7)"><i class="fa fa-list-ul"></i></button><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" title="" data-original-title="Paragraph"><i class="fa fa-align-left"></i> <span class="caret"></span></button><div class="dropdown-menu"><div class="note-btn-group btn-group note-align"><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Align left (CTRL+SHIFT+L)"><i class="fa fa-align-left"></i></button><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Align center (CTRL+SHIFT+E)"><i class="fa fa-align-center"></i></button><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Align right (CTRL+SHIFT+R)"><i class="fa fa-align-right"></i></button><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Justify full (CTRL+SHIFT+J)"><i class="fa fa-align-justify"></i></button></div><div class="note-btn-group btn-group note-list"><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Outdent (CTRL+[)"><i class="fa fa-outdent"></i></button><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Indent (CTRL+])"><i class="fa fa-indent"></i></button></div></div></div></div><div class="note-btn-group btn-group note-table"><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" title="" data-original-title="Table"><i class="fa fa-table"></i> <span class="caret"></span></button><div class="dropdown-menu note-table"><div class="note-dimension-picker">  <div class="note-dimension-picker-mousecatcher" data-event="insertTable" data-value="1x1" style="width: 10em; height: 10em;"></div>  <div class="note-dimension-picker-highlighted"></div>  <div class="note-dimension-picker-unhighlighted"></div></div><div class="note-dimension-display">1 x 1</div></div></div></div><div class="note-btn-group btn-group note-insert"><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Link"><i class="fa fa-link"></i></button><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Picture"><i class="fa fa-image"></i></button><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Video"><i class="fa fa-youtube-play"></i></button></div><div class="note-btn-group btn-group note-view"><button type="button" class="note-btn btn btn-default btn-sm btn-fullscreen" title="" data-original-title="Full Screen"><i class="fa fa-arrows-alt"></i></button><button type="button" class="note-btn btn btn-default btn-sm btn-codeview" title="" data-original-title="Code View"><i class="fa fa-code"></i></button><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Help"><i class="fa fa-question"></i></button></div></div><div class="note-editing-area"><div class="note-handle"><div class="note-control-selection" style="display: none;"><div class="note-control-selection-bg"></div><div class="note-control-holder note-control-nw"></div><div class="note-control-holder note-control-ne"></div><div class="note-control-holder note-control-sw"></div><div class="note-control-sizing note-control-se"></div><div class="note-control-selection-info"></div></div></div><textarea class="note-codable"></textarea><div class="note-editable panel-body" contenteditable="true" style="height: 300px;"><p>lonhgwd</p></div></div><div class="note-statusbar">  <div class="note-resizebar">    <div class="note-icon-bar"></div>    <div class="note-icon-bar"></div>    <div class="note-icon-bar"></div>  </div></div><div class="modal link-dialog" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Insert Link</h4>    </div>    <div class="modal-body"><div class="form-group"><label>Text to display</label><input class="note-link-text form-control" type="text"></div><div class="form-group"><label>To what URL should this link go?</label><input class="note-link-url form-control" type="text" value="http://"></div><div class="checkbox"><label><input type="checkbox" checked=""> Open in new window</label></div></div>    <div class="modal-footer"><button href="#" class="btn btn-primary note-link-btn disabled" disabled="">Insert Link</button></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Insert Image</h4>    </div>    <div class="modal-body"><div class="form-group note-group-select-from-files"><label>Select from files</label><input class="note-image-input form-control" type="file" name="files" accept="image/*" multiple="multiple"></div><div class="form-group" style="overflow:auto;"><label>Image URL</label><input class="note-image-url form-control col-md-12" type="text"></div></div>    <div class="modal-footer"><button href="#" class="btn btn-primary note-image-btn disabled" disabled="">Insert Image</button></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Insert Video</h4>    </div>    <div class="modal-body"><div class="form-group row-fluid"><label>Video URL? <small class="text-muted">(YouTube, Vimeo, Vine, Instagram, DailyMotion or Youku)</small></label><input class="note-video-url form-control span12" type="text"></div></div>    <div class="modal-footer"><button href="#" class="btn btn-primary note-video-btn disabled" disabled="">Insert Video</button></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Help</h4>    </div>    <div class="modal-body" style="max-height: 300px; overflow: scroll;"><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>ENTER</kbd></label><span>Insert Paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+Z</kbd></label><span>Undoes the last command</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+Y</kbd></label><span>Redoes the last command</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>TAB</kbd></label><span>Tab</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>SHIFT+TAB</kbd></label><span>Untab</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+B</kbd></label><span>Set a bold style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+I</kbd></label><span>Set a italic style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+U</kbd></label><span>Set a underline style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+S</kbd></label><span>Set a strikethrough style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+BACKSLASH</kbd></label><span>Clean a style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+L</kbd></label><span>Set left align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+E</kbd></label><span>Set center align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+R</kbd></label><span>Set right align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+J</kbd></label><span>Set full align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+NUM7</kbd></label><span>Toggle unordered list</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+NUM8</kbd></label><span>Toggle ordered list</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+LEFTBRACKET</kbd></label><span>Outdent on current paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+RIGHTBRACKET</kbd></label><span>Indent on current paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM0</kbd></label><span>Change current block's format as a paragraph(P tag)</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM1</kbd></label><span>Change current block's format as H1</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM2</kbd></label><span>Change current block's format as H2</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM3</kbd></label><span>Change current block's format as H3</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM4</kbd></label><span>Change current block's format as H4</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM5</kbd></label><span>Change current block's format as H5</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM6</kbd></label><span>Change current block's format as H6</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+ENTER</kbd></label><span>Insert horizontal rule</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+K</kbd></label><span>Show Link Dialog</span></div>    <div class="modal-footer"><p class="text-center"><a href="http://summernote.org/" target="_blank">Summernote 0.7.3</a> · <a href="http://github.com/summernote/summernote" target="_blank">Project</a> · <a href="http://github.com/summernote/summernote/issues" target="_blank">Issues</a></p></div>  </div></div></div></div>
+                    </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-meta-title1">Meta Tag Title</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="product_description[1][meta_title]" value="" placeholder="Meta Tag Title" id="input-meta-title1" class="form-control">
+                                          </div>
+                  </div>
+
+                </div>
+                              </div>
+            </div>
+            <div class="tab-pane" id="tab-data">
+              <div class="form-group required">
+                <label class="col-sm-2 control-label" for="input-model">Model</label>
+                <div class="col-sm-10">
+                  <input type="text" name="model" value="" placeholder="Model" id="input-model" class="form-control">
+                                  </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-price">Price</label>
+                <div class="col-sm-10">
+                  <input type="text" name="price" value="" placeholder="Price" id="input-price" class="form-control">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-quantity">Quantity</label>
+                <div class="col-sm-10">
+                  <input type="text" name="quantity" value="1" placeholder="Quantity" id="input-quantity" class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-minimum"><span data-toggle="tooltip" title="" data-original-title="Force a minimum ordered amount">Minimum Quantity</span></label>
+                <div class="col-sm-10">
+                  <input type="text" name="minimum" value="1" placeholder="Minimum Quantity" id="input-minimum" class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-subtract">Subtract Stock</label>
+                <div class="col-sm-10">
+                  <select name="subtract" id="input-subtract" class="form-control">
+                                        <option value="1" selected="selected">Yes</option>
+                    <option value="0">No</option>
+                                      </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-stock-status"><span data-toggle="tooltip" title="" data-original-title="Status shown when a product is out of stock">Out Of Stock Status</span></label>
+                <div class="col-sm-10">
+                  <select name="stock_status_id" id="input-stock-status" class="form-control">
+                                                            <option value="6">2-3 Days</option>
+                                                                                <option value="7">In Stock</option>
+                                                                                <option value="5">Out Of Stock</option>
+                                                                                <option value="8">Pre-Order</option>
+                                                          </select>
+                </div>
+              </div>
+          <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-critical">Alert me when stock quantity below</label>
+                <div class="col-sm-10">
+                  <input type="text" name="critical" value="1" id="input-critical" class="form-control">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-2 control-label">Requires Shipping</label>
+                <div class="col-sm-10">
+                  <label class="radio-inline">
+                                        <input type="radio" name="shipping" value="1" checked="checked">
+                    Yes                                      </label>
+                  <label class="radio-inline">
+                                        <input type="radio" name="shipping" value="0">
+                    No                                      </label>
+                </div>
+              </div>
+
+
+
+
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-date-available">Date Available</label>
+                <div class="col-sm-3">
+                  <div class="input-group date">
+                    <input type="text" name="date_available" value="2018-08-31" placeholder="Date Available" data-date-format="YYYY-MM-DD" id="input-date-available" class="form-control">
+                    <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
+                    </span></div>
+                </div>
+              </div>
+
+                 <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-date-expiration">Product has an expiration date?</label>
+               <div class="col-sm-3">
+                  <div class="input-group date">
+                    <input type="text" name="date_expiration" data-date-format="YYYY-MM-DD" id="input-date-expiration" class="form-control">
+                    <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
+                    </span></div>
+                </div>
+               </div>
+
+
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-length">Dimensions (L x W x H)</label>
+                <div class="col-sm-10">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <input type="text" name="length" value="" placeholder="Length" id="input-length" class="form-control">
+                    </div>
+                    <div class="col-sm-4">
+                      <input type="text" name="width" value="" placeholder="Width" id="input-width" class="form-control">
+                    </div>
+                    <div class="col-sm-4">
+                      <input type="text" name="height" value="" placeholder="Height" id="input-height" class="form-control">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-length-class">Length Class</label>
+                <div class="col-sm-10">
+                  <select name="length_class_id" id="input-length-class" class="form-control">
+                                                            <option value="1" selected="selected">Centimeter</option>
+                                                                                <option value="2">Millimeter</option>
+                                                                                <option value="3">Inch</option>
+                                                          </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-weight">Weight</label>
+                <div class="col-sm-10">
+                  <input type="text" name="weight" value="" placeholder="Weight" id="input-weight" class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-weight-class">Weight Class</label>
+                <div class="col-sm-10">
+                  <select name="weight_class_id" id="input-weight-class" class="form-control">
+                                                            <option value="1" selected="selected">Kilogram</option>
+                                                                                <option value="2">Gram</option>
+                                                                                <option value="5">Pound </option>
+                                                                                <option value="6">Ounce</option>
+                                                          </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-status">Status</label>
+                <div class="col-sm-10">
+                  <select name="status" id="input-status" class="form-control">
+                                        <option value="1" selected="selected">Enabled</option>
+                    <option value="0">Disabled</option>
+                                      </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-sort-order">Sort Order</label>
+                <div class="col-sm-10">
+                  <input type="text" name="sort_order" value="1" placeholder="Sort Order" id="input-sort-order" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-links">
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-manufacturer"><span data-toggle="tooltip" title="" data-original-title="(Autocomplete)">Manufacturer</span></label>
+                <div class="col-sm-10">
+                  <input type="text" name="manufacturer" value="" placeholder="Manufacturer" id="input-manufacturer" class="form-control" autocomplete="off"><ul class="dropdown-menu"></ul>
+                  <input type="hidden" name="manufacturer_id" value="0">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-category"><span data-toggle="tooltip" title="" data-original-title="(Autocomplete)">Categories</span></label>
+                <div class="col-sm-10">
+                  <input type="text" name="category" value="" placeholder="Categories" id="input-category" class="form-control" autocomplete="off"><ul class="dropdown-menu"></ul>
+                  <div id="product-category" class="well well-sm" style="height: 150px; overflow: auto;">
+                                      </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-filter"><span data-toggle="tooltip" title="" data-original-title="(Autocomplete)">Filters</span></label>
+                <div class="col-sm-10">
+                  <input type="text" name="filter" value="" placeholder="Filters" id="input-filter" class="form-control" autocomplete="off"><ul class="dropdown-menu"></ul>
+                  <div id="product-filter" class="well well-sm" style="height: 150px; overflow: auto;">
+                                      </div>
+                </div>
+              </div>
+               <div class="form-group">
+                <label class="col-xs-2 col-sm-2"> </label>
+                <div class="col-xs-2 col-sm-2">
+                  <div class="well well-sm" style="height: 50px; overflow: auto;">
+                    <div class="checkbox">
+                      <label>
+                                                <input type="checkbox" name="product_store[]" value="0" checked="checked">
+                        Default                                              </label>
+                    </div>
+                                      </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-related"><span data-toggle="tooltip" title="" data-original-title="(Autocomplete)">Related Products</span></label>
+                <div class="col-sm-10">
+                  <input type="text" name="related" value="" placeholder="Related Products" id="input-related" class="form-control" autocomplete="off"><ul class="dropdown-menu"></ul>
+                  <div id="product-related" class="well well-sm" style="height: 150px; overflow: auto;">
+                                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-attribute">
+              <div class="table-responsive">
+                <table id="attribute" class="table table-striped table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <td class="text-left">Attribute</td>
+                      <td class="text-left">Text</td>
+                      <td></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                                                          </tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="2"></td>
+                      <td class="text-left"><button type="button" onclick="addAttribute();" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Add Attribute"><i class="fa fa-plus-circle"></i></button></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-option">
+              <div class="row">
+                <div class="col-sm-2">
+                  <ul class="nav nav-pills nav-stacked" id="option">
+                                                            <li>
+                      <input type="text" name="option" value="" placeholder="Option" id="input-option" class="form-control" autocomplete="off"><ul class="dropdown-menu" style="top: 35px; left: 0px; display: none;"><li class="dropdown-header">Choose</li><li data-value="5"><a href="http://tamina.webstarterz.com/admin/#">&nbsp;&nbsp;&nbsp;Select</a></li><li data-value="11"><a href="http://tamina.webstarterz.com/admin/#">&nbsp;&nbsp;&nbsp;Size</a></li></ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-10">
+                  <div class="tab-content">
+                                                                              </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="tab-pane active" id="tab-image">
+              <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <td class="text-left">Image</td>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td class="text-left"><a href="http://tamina.webstarterz.com/admin/" id="thumb-image" data-toggle="image" class="img-thumbnail"><img src="./admin_files/no_image-100x100.png" alt="" title="" data-placeholder="http://tamina.webstarterz.com/image/cache/no_image-100x100.png"></a><input type="hidden" name="image" value="" id="input-image"></td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-responsive">
+                <table id="images" class="table table-striped table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <td class="text-left">Additional Images</td>
+                      <td class="text-right">Sort Order</td>
+                      <td></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                                                          </tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="2"></td>
+                      <td class="text-left"><button type="button" onclick="addImage();" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Add Image"><i class="fa fa-plus-circle"></i></button></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript"><!--
+// Manufacturer
+$('input[name=\'manufacturer\']').autocomplete({
+	'source': function(request, response) {
+		$.ajax({
+			url: 'index.php?route=catalog/manufacturer/autocomplete&token=xjIBMdMOhp2hJO75ZyuJHZzMhwGx098V&filter_name=' +  encodeURIComponent(request),
+			dataType: 'json',
+			success: function(json) {
+				json.unshift({
+					manufacturer_id: 0,
+					name: ' --- None --- '
+				});
+
+				response($.map(json, function(item) {
+					return {
+						label: item['name'],
+						value: item['manufacturer_id']
+					}
+				}));
+			}
+		});
+	},
+	'select': function(item) {
+		$('input[name=\'manufacturer\']').val(item['label']);
+		$('input[name=\'manufacturer_id\']').val(item['value']);
+	}
+});
+
+// Category
+$('input[name=\'category\']').autocomplete({
+	'source': function(request, response) {
+		$.ajax({
+			url: 'index.php?route=catalog/category/autocomplete&token=xjIBMdMOhp2hJO75ZyuJHZzMhwGx098V&filter_name=' +  encodeURIComponent(request),
+			dataType: 'json',
+			success: function(json) {
+				response($.map(json, function(item) {
+					return {
+						label: item['name'],
+						value: item['category_id']
+					}
+				}));
+			}
+		});
+	},
+	'select': function(item) {
+		$('input[name=\'category\']').val('');
+
+		$('#product-category' + item['value']).remove();
+
+		$('#product-category').append('<div id="product-category' + item['value'] + '"><i class="fa fa-minus-circle"></i> ' + item['label'] + '<input type="hidden" name="product_category[]" value="' + item['value'] + '" /></div>');
+	}
+});
+
+$('#product-category').delegate('.fa-minus-circle', 'click', function() {
+	$(this).parent().remove();
+});
+
+// Filter
+$('input[name=\'filter\']').autocomplete({
+	'source': function(request, response) {
+		$.ajax({
+			url: 'index.php?route=catalog/filter/autocomplete&token=xjIBMdMOhp2hJO75ZyuJHZzMhwGx098V&filter_name=' +  encodeURIComponent(request),
+			dataType: 'json',
+			success: function(json) {
+				response($.map(json, function(item) {
+					return {
+						label: item['name'],
+						value: item['filter_id']
+					}
+				}));
+			}
+		});
+	},
+	'select': function(item) {
+		$('input[name=\'filter\']').val('');
+
+		$('#product-filter' + item['value']).remove();
+
+		$('#product-filter').append('<div id="product-filter' + item['value'] + '"><i class="fa fa-minus-circle"></i> ' + item['label'] + '<input type="hidden" name="product_filter[]" value="' + item['value'] + '" /></div>');
+	}
+});
+
+$('#product-filter').delegate('.fa-minus-circle', 'click', function() {
+	$(this).parent().remove();
+});
+
+// Downloads
+$('input[name=\'download\']').autocomplete({
+	'source': function(request, response) {
+		$.ajax({
+			url: 'index.php?route=catalog/download/autocomplete&token=xjIBMdMOhp2hJO75ZyuJHZzMhwGx098V&filter_name=' +  encodeURIComponent(request),
+			dataType: 'json',
+			success: function(json) {
+				response($.map(json, function(item) {
+					return {
+						label: item['name'],
+						value: item['download_id']
+					}
+				}));
+			}
+		});
+	},
+	'select': function(item) {
+		$('input[name=\'download\']').val('');
+
+		$('#product-download' + item['value']).remove();
+
+		$('#product-download').append('<div id="product-download' + item['value'] + '"><i class="fa fa-minus-circle"></i> ' + item['label'] + '<input type="hidden" name="product_download[]" value="' + item['value'] + '" /></div>');
+	}
+});
+
+$('#product-download').delegate('.fa-minus-circle', 'click', function() {
+	$(this).parent().remove();
+});
+
+// Related
+$('input[name=\'related\']').autocomplete({
+	'source': function(request, response) {
+		$.ajax({
+			url: 'index.php?route=catalog/product/autocomplete&token=xjIBMdMOhp2hJO75ZyuJHZzMhwGx098V&filter_name=' +  encodeURIComponent(request),
+			dataType: 'json',
+			success: function(json) {
+				response($.map(json, function(item) {
+					return {
+						label: item['name'],
+						value: item['product_id']
+					}
+				}));
+			}
+		});
+	},
+	'select': function(item) {
+		$('input[name=\'related\']').val('');
+
+		$('#product-related' + item['value']).remove();
+
+		$('#product-related').append('<div id="product-related' + item['value'] + '"><i class="fa fa-minus-circle"></i> ' + item['label'] + '<input type="hidden" name="product_related[]" value="' + item['value'] + '" /></div>');
+	}
+});
+
+$('#product-related').delegate('.fa-minus-circle', 'click', function() {
+	$(this).parent().remove();
+});
+//--></script>
+  <script type="text/javascript"><!--
+var attribute_row = 0;
+
+function addAttribute() {
+    html  = '<tr id="attribute-row' + attribute_row + '">';
+	html += '  <td class="text-left" style="width: 20%;"><input type="text" name="product_attribute[' + attribute_row + '][name]" value="" placeholder="Attribute" class="form-control" /><input type="hidden" name="product_attribute[' + attribute_row + '][attribute_id]" value="" /></td>';
+	html += '  <td class="text-left">';
+		html += '<div class="input-group"><span class="input-group-addon"><img src="language/en-gb/en-gb.png" title="English" /></span><textarea name="product_attribute[' + attribute_row + '][product_attribute_description][1][text]" rows="5" placeholder="Text" class="form-control"></textarea></div>';
+    	html += '  </td>';
+	html += '  <td class="text-left"><button type="button" onclick="$(\'#attribute-row' + attribute_row + '\').remove();" data-toggle="tooltip" title="Remove" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+    html += '</tr>';
+
+	$('#attribute tbody').append(html);
+
+	attributeautocomplete(attribute_row);
+
+	attribute_row++;
+}
+
+function attributeautocomplete(attribute_row) {
+	$('input[name=\'product_attribute[' + attribute_row + '][name]\']').autocomplete({
+		'source': function(request, response) {
+			$.ajax({
+				url: 'index.php?route=catalog/attribute/autocomplete&token=xjIBMdMOhp2hJO75ZyuJHZzMhwGx098V&filter_name=' +  encodeURIComponent(request),
+				dataType: 'json',
+				success: function(json) {
+					response($.map(json, function(item) {
+						return {
+							category: item.attribute_group,
+							label: item.name,
+							value: item.attribute_id
+						}
+					}));
+				}
+			});
+		},
+		'select': function(item) {
+			$('input[name=\'product_attribute[' + attribute_row + '][name]\']').val(item['label']);
+			$('input[name=\'product_attribute[' + attribute_row + '][attribute_id]\']').val(item['value']);
+		}
+	});
+}
+
+$('#attribute tbody tr').each(function(index, element) {
+	attributeautocomplete(index);
+});
+//--></script>
+  <script type="text/javascript"><!--
+var option_row = 0;
+
+$('input[name=\'option\']').autocomplete({
+	'source': function(request, response) {
+		$.ajax({
+			url: 'index.php?route=catalog/option/autocomplete&token=xjIBMdMOhp2hJO75ZyuJHZzMhwGx098V&filter_name=' +  encodeURIComponent(request),
+			dataType: 'json',
+			success: function(json) {
+				response($.map(json, function(item) {
+					return {
+						category: item['category'],
+						label: item['name'],
+						value: item['option_id'],
+						type: item['type'],
+						option_value: item['option_value']
+					}
+				}));
+			}
+		});
+	},
+	'select': function(item) {
+		html  = '<div class="tab-pane" id="tab-option' + option_row + '">';
+		html += '	<input type="hidden" name="product_option[' + option_row + '][product_option_id]" value="" />';
+		html += '	<input type="hidden" name="product_option[' + option_row + '][name]" value="' + item['label'] + '" />';
+		html += '	<input type="hidden" name="product_option[' + option_row + '][option_id]" value="' + item['value'] + '" />';
+		html += '	<input type="hidden" name="product_option[' + option_row + '][type]" value="' + item['type'] + '" />';
+
+		html += '	<div class="form-group">';
+		html += '	  <label class="col-sm-2 control-label" for="input-required' + option_row + '">Required</label>';
+		html += '	  <div class="col-sm-10"><select name="product_option[' + option_row + '][required]" id="input-required' + option_row + '" class="form-control">';
+		html += '	      <option value="1">Yes</option>';
+		html += '	      <option value="0">No</option>';
+		html += '	  </select></div>';
+		html += '	</div>';
+
+		if (item['type'] == 'text') {
+			html += '	<div class="form-group">';
+			html += '	  <label class="col-sm-2 control-label" for="input-value' + option_row + '">Option Value</label>';
+			html += '	  <div class="col-sm-10"><input type="text" name="product_option[' + option_row + '][value]" value="" placeholder="Option Value" id="input-value' + option_row + '" class="form-control" /></div>';
+			html += '	</div>';
+		}
+
+		if (item['type'] == 'textarea') {
+			html += '	<div class="form-group">';
+			html += '	  <label class="col-sm-2 control-label" for="input-value' + option_row + '">Option Value</label>';
+			html += '	  <div class="col-sm-10"><textarea name="product_option[' + option_row + '][value]" rows="5" placeholder="Option Value" id="input-value' + option_row + '" class="form-control"></textarea></div>';
+			html += '	</div>';
+		}
+
+		if (item['type'] == 'file') {
+			html += '	<div class="form-group" style="display: none;">';
+			html += '	  <label class="col-sm-2 control-label" for="input-value' + option_row + '">Option Value</label>';
+			html += '	  <div class="col-sm-10"><input type="text" name="product_option[' + option_row + '][value]" value="" placeholder="Option Value" id="input-value' + option_row + '" class="form-control" /></div>';
+			html += '	</div>';
+		}
+
+		if (item['type'] == 'date') {
+			html += '	<div class="form-group">';
+			html += '	  <label class="col-sm-2 control-label" for="input-value' + option_row + '">Option Value</label>';
+			html += '	  <div class="col-sm-3"><div class="input-group date"><input type="text" name="product_option[' + option_row + '][value]" value="" placeholder="Option Value" data-date-format="YYYY-MM-DD" id="input-value' + option_row + '" class="form-control" /><span class="input-group-btn"><button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button></span></div></div>';
+			html += '	</div>';
+		}
+
+		if (item['type'] == 'time') {
+			html += '	<div class="form-group">';
+			html += '	  <label class="col-sm-2 control-label" for="input-value' + option_row + '">Option Value</label>';
+			html += '	  <div class="col-sm-10"><div class="input-group time"><input type="text" name="product_option[' + option_row + '][value]" value="" placeholder="Option Value" data-date-format="HH:mm" id="input-value' + option_row + '" class="form-control" /><span class="input-group-btn"><button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button></span></div></div>';
+			html += '	</div>';
+		}
+
+		if (item['type'] == 'datetime') {
+			html += '	<div class="form-group">';
+			html += '	  <label class="col-sm-2 control-label" for="input-value' + option_row + '">Option Value</label>';
+			html += '	  <div class="col-sm-10"><div class="input-group datetime"><input type="text" name="product_option[' + option_row + '][value]" value="" placeholder="Option Value" data-date-format="YYYY-MM-DD HH:mm" id="input-value' + option_row + '" class="form-control" /><span class="input-group-btn"><button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button></span></div></div>';
+			html += '	</div>';
+		}
+
+		if (item['type'] == 'select' || item['type'] == 'radio' || item['type'] == 'checkbox' || item['type'] == 'image') {
+			html += '<div class="table-responsive">';
+			html += '  <table id="option-value' + option_row + '" class="table table-striped table-bordered table-hover">';
+			html += '  	 <thead>';
+			html += '      <tr>';
+			html += '        <td class="text-left">Option Value</td>';
+			html += '        <td class="text-right">Quantity</td>';
+			html += '        <td class="text-left">Subtract Stock</td>';
+			html += '        <td class="text-right">Price</td>';
+			html += '        <td class="text-right">Points</td>';
+			html += '        <td class="text-right">Weight</td>';
+			html += '        <td></td>';
+			html += '      </tr>';
+			html += '  	 </thead>';
+			html += '  	 <tbody>';
+			html += '    </tbody>';
+			html += '    <tfoot>';
+			html += '      <tr>';
+			html += '        <td colspan="6"></td>';
+			html += '        <td class="text-left"><button type="button" onclick="addOptionValue(' + option_row + ');" data-toggle="tooltip" title="Add Option Value" class="btn btn-primary"><i class="fa fa-plus-circle"></i></button></td>';
+			html += '      </tr>';
+			html += '    </tfoot>';
+			html += '  </table>';
+			html += '</div>';
+
+            html += '  <select id="option-values' + option_row + '" style="display: none;">';
+
+            for (i = 0; i < item['option_value'].length; i++) {
+				html += '  <option value="' + item['option_value'][i]['option_value_id'] + '">' + item['option_value'][i]['name'] + '</option>';
+            }
+
+            html += '  </select>';
+			html += '</div>';
+		}
+
+		$('#tab-option .tab-content').append(html);
+
+		$('#option > li:last-child').before('<li><a href="#tab-option' + option_row + '" data-toggle="tab"><i class="fa fa-minus-circle" onclick="$(\'a[href=\\\'#tab-option' + option_row + '\\\']\').parent().remove(); $(\'#tab-option' + option_row + '\').remove(); $(\'#option a:first\').tab(\'show\')"></i> ' + item['label'] + '</li>');
+
+		$('#option a[href=\'#tab-option' + option_row + '\']').tab('show');
+
+		$('[data-toggle=\'tooltip\']').tooltip({
+			container: 'body',
+			html: true
+		});
+
+		$('.date').datetimepicker({
+			pickTime: false
+		});
+
+		$('.time').datetimepicker({
+			pickDate: false
+		});
+
+		$('.datetime').datetimepicker({
+			pickDate: true,
+			pickTime: true
+		});
+
+		option_row++;
+	}
+});
+//--></script>
+  <script type="text/javascript"><!--
+var option_value_row = 0;
+
+function addOptionValue(option_row) {
+	html  = '<tr id="option-value-row' + option_value_row + '">';
+	html += '  <td class="text-left"><select name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][option_value_id]" class="form-control">';
+	html += $('#option-values' + option_row).html();
+	html += '  </select><input type="hidden" name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][product_option_value_id]" value="" /></td>';
+	html += '  <td class="text-right"><input type="text" name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][quantity]" value="" placeholder="Quantity" class="form-control" /></td>';
+	html += '  <td class="text-left"><select name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][subtract]" class="form-control">';
+	html += '    <option value="1">Yes</option>';
+	html += '    <option value="0">No</option>';
+	html += '  </select></td>';
+	html += '  <td class="text-right"><select name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][price_prefix]" class="form-control">';
+	html += '    <option value="+">+</option>';
+	html += '    <option value="-">-</option>';
+	html += '  </select>';
+	html += '  <input type="text" name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][price]" value="" placeholder="Price" class="form-control" /></td>';
+	html += '  <td class="text-right"><select name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][points_prefix]" class="form-control">';
+	html += '    <option value="+">+</option>';
+	html += '    <option value="-">-</option>';
+	html += '  </select>';
+	html += '  <input type="text" name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][points]" value="" placeholder="Points" class="form-control" /></td>';
+	html += '  <td class="text-right"><select name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][weight_prefix]" class="form-control">';
+	html += '    <option value="+">+</option>';
+	html += '    <option value="-">-</option>';
+	html += '  </select>';
+	html += '  <input type="text" name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][weight]" value="" placeholder="Weight" class="form-control" /></td>';
+	html += '  <td class="text-left"><button type="button" onclick="$(this).tooltip(\'destroy\');$(\'#option-value-row' + option_value_row + '\').remove();" data-toggle="tooltip" rel="tooltip" title="Remove" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+	html += '</tr>';
+
+	$('#option-value' + option_row + ' tbody').append(html);
+        $('[rel=tooltip]').tooltip();
+
+	option_value_row++;
+}
+//--></script>
+  <script type="text/javascript"><!--
+var discount_row = <b>Notice</b>: Undefined variable: discount_row in <b>/home/cp368946/public_html/admin/view/template/catalog/product_form.tpl</b> on line <b>1008</b>;
+
+function addDiscount() {
+	html  = '<tr id="discount-row' + discount_row + '">';
+    html += '  <td class="text-left"><select name="product_discount[' + discount_row + '][customer_group_id]" class="form-control">';
+        html += '    <option value="1">Default</option>';
+        html += '  </select></td>';
+    html += '  <td class="text-right"><input type="text" name="product_discount[' + discount_row + '][quantity]" value="" placeholder="Quantity" class="form-control" /></td>';
+    html += '  <td class="text-right"><input type="text" name="product_discount[' + discount_row + '][priority]" value="" placeholder="Priority" class="form-control" /></td>';
+	html += '  <td class="text-right"><input type="text" name="product_discount[' + discount_row + '][price]" value="" placeholder="Price" class="form-control" /></td>';
+    html += '  <td class="text-left" style="width: 20%;"><div class="input-group date"><input type="text" name="product_discount[' + discount_row + '][date_start]" value="" placeholder="Date Start" data-date-format="YYYY-MM-DD" class="form-control" /><span class="input-group-btn"><button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button></span></div></td>';
+	html += '  <td class="text-left" style="width: 20%;"><div class="input-group date"><input type="text" name="product_discount[' + discount_row + '][date_end]" value="" placeholder="Date End" data-date-format="YYYY-MM-DD" class="form-control" /><span class="input-group-btn"><button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button></span></div></td>';
+	html += '  <td class="text-left"><button type="button" onclick="$(\'#discount-row' + discount_row + '\').remove();" data-toggle="tooltip" title="Remove" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+	html += '</tr>';
+
+	$('#discount tbody').append(html);
+
+	$('.date').datetimepicker({
+		pickTime: false
+	});
+
+	discount_row++;
+}
+//--></script>
+  <script type="text/javascript"><!--
+var special_row = <b>Notice</b>: Undefined variable: special_row in <b>/home/cp368946/public_html/admin/view/template/catalog/product_form.tpl</b> on line <b>1035</b>;
+
+function addSpecial() {
+	html  = '<tr id="special-row' + special_row + '">';
+    html += '  <td class="text-left"><select name="product_special[' + special_row + '][customer_group_id]" class="form-control">';
+        html += '      <option value="1">Default</option>';
+        html += '  </select></td>';
+    html += '  <td class="text-right"><input type="text" name="product_special[' + special_row + '][priority]" value="" placeholder="Priority" class="form-control" /></td>';
+	html += '  <td class="text-right"><input type="text" name="product_special[' + special_row + '][price]" value="" placeholder="Price" class="form-control" /></td>';
+    html += '  <td class="text-left" style="width: 20%;"><div class="input-group date"><input type="text" name="product_special[' + special_row + '][date_start]" value="" placeholder="Date Start" data-date-format="YYYY-MM-DD" class="form-control" /><span class="input-group-btn"><button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button></span></div></td>';
+	html += '  <td class="text-left" style="width: 20%;"><div class="input-group date"><input type="text" name="product_special[' + special_row + '][date_end]" value="" placeholder="Date End" data-date-format="YYYY-MM-DD" class="form-control" /><span class="input-group-btn"><button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button></span></div></td>';
+	html += '  <td class="text-left"><button type="button" onclick="$(\'#special-row' + special_row + '\').remove();" data-toggle="tooltip" title="Remove" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+	html += '</tr>';
+
+	$('#special tbody').append(html);
+
+	$('.date').datetimepicker({
+		pickTime: false
+	});
+
+	special_row++;
+}
+//--></script>
+  <script type="text/javascript"><!--
+var image_row = 0;
+
+function addImage() {
+	html  = '<tr id="image-row' + image_row + '">';
+	html += '  <td class="text-left"><a href="" id="thumb-image' + image_row + '"data-toggle="image" class="img-thumbnail"><img src="http://tamina.webstarterz.com/image/cache/no_image-100x100.png" alt="" title="" data-placeholder="http://tamina.webstarterz.com/image/cache/no_image-100x100.png" /></a><input type="hidden" name="product_image[' + image_row + '][image]" value="" id="input-image' + image_row + '" /></td>';
+	html += '  <td class="text-right"><input type="text" name="product_image[' + image_row + '][sort_order]" value="" placeholder="Sort Order" class="form-control" /></td>';
+	html += '  <td class="text-left"><button type="button" onclick="$(\'#image-row' + image_row  + '\').remove();" data-toggle="tooltip" title="Remove" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+	html += '</tr>';
+
+	$('#images tbody').append(html);
+
+	image_row++;
+}
+//--></script>
+
+<script>
+        $("input[type=radio]").change(function() {
+            if($(this).prop('value') == '1'){
+                    $("#send_to_yes").show();
+                }
+                else {
+                    $("#send_to_yes").hide();
+                }
+        });
+</script>
+
+
+
+  <script type="text/javascript"><!--
+var recurring_row = <b>Notice</b>: Undefined variable: recurring_row in <b>/home/cp368946/public_html/admin/view/template/catalog/product_form.tpl</b> on line <b>1090</b>;
+
+function addRecurring() {
+	recurring_row++;
+
+	html  = '';
+	html += '<tr id="recurring-row' + recurring_row + '">';
+	html += '  <td class="left">';
+	html += '    <select name="product_recurring[' + recurring_row + '][recurring_id]" class="form-control">>';
+		html += '    </select>';
+	html += '  </td>';
+	html += '  <td class="left">';
+	html += '    <select name="product_recurring[' + recurring_row + '][customer_group_id]" class="form-control">>';
+		html += '      <option value="1">Default</option>';
+		html += '    <select>';
+	html += '  </td>';
+	html += '  <td class="left">';
+	html += '    <a onclick="$(\'#recurring-row' + recurring_row + '\').remove()" data-toggle="tooltip" title="Remove" class="btn btn-danger"><i class="fa fa-minus-circle"></i></a>';
+	html += '  </td>';
+	html += '</tr>';
+
+	$('#tab-recurring table tbody').append(html);
+}
+//--></script>
+  <script type="text/javascript"><!--
+$('.date').datetimepicker({
+	pickTime: false
+});
+
+$('.time').datetimepicker({
+	pickDate: false
+});
+
+$('.datetime').datetimepicker({
+	pickDate: true,
+	pickTime: true
+});
+//--></script>
+  <script type="text/javascript"><!--
+$('#language a:first').tab('show');
+$('#option a:first').tab('show');
+//--></script></div>
+<footer id="footer"></footer></div><div class="bootstrap-datetimepicker-widget dropdown-menu"><div class="datepicker"><div class="datepicker-days" style="display: block;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="picker-switch">August 2018</th><th class="next">›</th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day old">29</td><td class="day old">30</td><td class="day old">31</td><td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td></tr><tr><td class="day">5</td><td class="day">6</td><td class="day">7</td><td class="day">8</td><td class="day">9</td><td class="day">10</td><td class="day">11</td></tr><tr><td class="day">12</td><td class="day">13</td><td class="day">14</td><td class="day">15</td><td class="day">16</td><td class="day">17</td><td class="day">18</td></tr><tr><td class="day">19</td><td class="day">20</td><td class="day">21</td><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day">25</td></tr><tr><td class="day">26</td><td class="day">27</td><td class="day">28</td><td class="day">29</td><td class="day">30</td><td class="day active today">31</td><td class="day new">1</td></tr><tr><td class="day new">2</td><td class="day new">3</td><td class="day new">4</td><td class="day new">5</td><td class="day new">6</td><td class="day new">7</td><td class="day new">8</td></tr></tbody></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="picker-switch">2018</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month active">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="picker-switch">2010-2019</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year active">2018</span><span class="year">2019</span><span class="year old">2020</span></td></tr></tbody></table></div></div></div><div class="bootstrap-datetimepicker-widget dropdown-menu"><div class="datepicker"><div class="datepicker-days" style="display: block;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="picker-switch">August 2018</th><th class="next">›</th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day old">29</td><td class="day old">30</td><td class="day old">31</td><td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td></tr><tr><td class="day">5</td><td class="day">6</td><td class="day">7</td><td class="day">8</td><td class="day">9</td><td class="day">10</td><td class="day">11</td></tr><tr><td class="day">12</td><td class="day">13</td><td class="day">14</td><td class="day">15</td><td class="day">16</td><td class="day">17</td><td class="day">18</td></tr><tr><td class="day">19</td><td class="day">20</td><td class="day">21</td><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day">25</td></tr><tr><td class="day">26</td><td class="day">27</td><td class="day">28</td><td class="day">29</td><td class="day">30</td><td class="day active today">31</td><td class="day new">1</td></tr><tr><td class="day new">2</td><td class="day new">3</td><td class="day new">4</td><td class="day new">5</td><td class="day new">6</td><td class="day new">7</td><td class="day new">8</td></tr></tbody></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="picker-switch">2018</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month active">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="picker-switch">2010-2019</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year active">2018</span><span class="year">2019</span><span class="year old">2020</span></td></tr></tbody></table></div></div></div>
+
+<div class="note-popover popover in note-link-popover bottom" style="display: none;">  <div class="arrow"></div>  <div class="popover-content note-children-container"><span><a target="_blank"></a>&nbsp;</span><div class="note-btn-group btn-group note-link"><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Edit"><i class="fa fa-link"></i></button><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Unlink"><i class="fa fa-chain-broken"></i></button></div></div></div><div class="note-popover popover in note-image-popover bottom" style="display: none;">  <div class="arrow"></div>  <div class="popover-content note-children-container"><div class="note-btn-group btn-group note-imagesize"><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Resize Full"><span class="note-fontsize-10">100%</span></button><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Resize Half"><span class="note-fontsize-10">50%</span></button><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Resize Quarter"><span class="note-fontsize-10">25%</span></button></div><div class="note-btn-group btn-group note-float"><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Float Left"><i class="fa fa-align-left"></i></button><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Float Right"><i class="fa fa-align-right"></i></button><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Float None"><i class="fa fa-align-justify"></i></button></div><div class="note-btn-group btn-group note-remove"><button type="button" class="note-btn btn btn-default btn-sm" title="" data-original-title="Remove Image"><i class="fa fa-trash"></i></button></div></div></div></body></html>
